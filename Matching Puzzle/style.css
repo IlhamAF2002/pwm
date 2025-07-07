@@ -1,0 +1,79 @@
+body {
+    overflow:jku76ytgfrdcx hidden;
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #F5FCFF;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 12dvmin;
+    height: 12dvmin;
+    border: 0.1dvmin solid white;
+    text-align: center;
+    font-size: 6dvmin;
+    box-sizing: border-box;
+}
+
+.yellowBackground {
+    background-color: #fff2cc;
+}
+
+.greenBackground {
+    background-color: #e2efda;
+}
+
+.buttonContainer {
+    margin-top: 4dvmin;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    margin: 1.5dvmin;
+    padding: 1dvmin;
+    border: 0.1dvmin solid white;
+    border-radius: 0.3dvmin;
+    color: white;
+    font-size: 5dvmin;
+    font-family: Consolas,
+        'Courier New',
+        monospace;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active{
+    /* transform: scale(1); */
+}
+
+button:disabled {
+    /* fruit emoji opacity */
+    color: rgba(0, 0, 0, 1);
+}
+
+#startButton {
+    background-color: #ffe699;
+}
+
+#resetButton {
+    background-color: #c6e0b4;
+}

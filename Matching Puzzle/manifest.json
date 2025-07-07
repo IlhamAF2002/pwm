@@ -1,0 +1,38 @@
+{
+  "name":"Matching Puzzle PWA",
+  "short_name":"Puzzle",
+  "start_url":"index.html",
+  "display":"standalone",
+  "background_color":"white",
+  "theme_color":"#3b3b3b",
+  "scope": ".",
+  "description":"Simple matching puzzle PWA",
+  "icons":[
+  {
+  "src":"images/icon-64x64.png",                      
+  "sizes":"64x64",
+  "type":"image/png"
+  },
+  {
+  "src":"images/icon-512x512.png",
+  "sizes":"512x512",
+  "type":"image/png"
+  }
+],
+"screenshots": [
+{
+"src": "/images/screenshot1.png",
+"sizes": "701x701",
+"type": "image/png",
+"form_factor": "wide",
+"label": "Main Screen"
+},
+{
+  "src": "/images/screenshot3.png",
+  "sizes": "320x320",
+  "type": "image/png",
+  "form_factor": "narrow",
+  "label": "Main Screen"
+  }
+]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Matching Puzzle</title>
+    <!-- Meta Tags required for Progressive Web App -->
+    <meta name="background-color" content="white">
+    <!-- <meta name="theme-color" content="#3b3b3b"> -->
+
+    <!-- Manifest File link -->
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        window.addEventListener('load', () => {
+          registerSW();
+        });
+    
+        // Register the Service Worker
+        async function registerSW() {
+          if ('serviceWorker' in navigator) {
+            try {
+              await navigator
+                    .serviceWorker
+                    .register('serviceWorker.js');
+            }
+            catch (e) {
+              console.log('SW registration failed');
+            }
+          }
+        }
+     </script>
+</head>
+
+<body>
+    <div class="container" id="puzzleContainer"></div>
+
+    <div class="buttonContainer">
+        <button id="startButton" value="Start">START</button>
+        <button id="resetButton">RESET</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
